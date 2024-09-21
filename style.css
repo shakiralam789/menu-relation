@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: rgb(32, 32, 32)
+}
+
+ul{
+    list-style: none;
+}
+.container{
+    max-width: 1140px;
+    margin: auto;
+    padding: 16px;
+}
+
+p{
+    padding: 10px 16px;
+}
+
+.relational-data-wrapper .menu {
+    position: absolute;
+    z-index: 9;
+    border-radius: 2px;
+    overflow: hidden;
+    width: max-content;
+    border-radius: 6px;
+    overflow: hidden;
+    min-width: 140px;
+  }
+  
+  .relational-data-wrapper .menu .elementHeader {
+    padding: 10px 16px;
+    cursor: grab;
+    z-index: 10;
+    background-color: #575757;
+    color: white;
+    text-transform: capitalize;
+    width: 100%;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 14px;
+  }  
+  
+  .relational-data-wrapper .menu > li{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
+  }
+
+  .relational-data-wrapper .menu .menu-list{
+    cursor: pointer;
+    font-size: 13px;
+    text-transform: capitalize;
+    background-color: #d8d8d8;
+  }
+  
+  .relational-data-wrapper .menu .menu-list.active{
+    background: #b9b9b9;
+  }
+  
+    .relational-data-wrapper .menu .menu-list:hover{
+      background-color: #aaaaaa;
+    }
+
+  .relational-data-wrapper {
+    position: absolute;
+    margin:auto;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid;
+  }
+  
+  .relational-data-wrapper svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .relational-data-wrapper svg path {
+    fill: none;
+    vector-effect: non-scaling-stroke;
+    stroke-width: 2px;
+    stroke: gray;
+    cursor: pointer;
+    stroke-linejoin: round;
+    position: relative;
+    z-index: 9999;
+  }
+  
+  .relational-data-wrapper svg path:hover{
+    stroke-width: 5px;
+  }
